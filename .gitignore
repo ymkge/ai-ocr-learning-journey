@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS / System
+.DS_Store
+Thumbs.db
+
+# Project Specific
+# OCRの出力結果や自動生成されたサンプル画像をGit管理から除外したい場合
+01_easy_ocr/outputs/
+01_easy_ocr/images/sample.png

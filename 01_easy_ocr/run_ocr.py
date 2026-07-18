@@ -21,8 +21,9 @@ def generate_sample_image(filepath):
     img = Image.new("RGB", (600, 300), color=(255, 255, 255))
     draw = ImageDraw.Draw(img)
     
-    # フォントの選択 (Mac標準の日本語フォントパスをいくつか試す)
+    # フォントの選択 (Mac標準 of 日本語フォントパスをいくつか試す)
     font_paths = [
+        "/System/Library/Fonts/Hiragino Sans GB.ttc",
         "/System/Library/Fonts/Supplemental/Osaka.ttf",
         "/System/Library/Fonts/ヒラギノ角ゴ Pro W3.otf",
         "/System/Library/Fonts/Supplemental/Arial.ttf",  # 英語のみのフォールバック
