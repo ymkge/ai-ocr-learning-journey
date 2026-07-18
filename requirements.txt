@@ -1,0 +1,10 @@
+torch
+torchvision
+opencv-python
+easyocr
+pandas
+numpy
+Levenshtein
+google-generativeai
+matplotlib
+pillow
