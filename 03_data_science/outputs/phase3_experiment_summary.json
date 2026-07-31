@@ -1,0 +1,206 @@
+[
+  {
+    "exp_no": "00",
+    "exp_name": "補正なし (Baseline / デフォルト)",
+    "pred_text": "AlOCR Learning Journey\n日本語の認識テストです\nEasyOCR on M4 Mac GPUICPU\nDate: 2026-07-1812.34.56",
+    "cer": 7.954545454545454,
+    "wer": 46.15384615384615,
+    "distance": 7,
+    "line_details": [
+      {
+        "gt": "AI OCR Learning Journey",
+        "hyp": "AlOCR Learning Journey",
+        "cer": 8.695652173913043,
+        "distance": 2
+      },
+      {
+        "gt": "日本語の認識テストです。",
+        "hyp": "日本語の認識テストです",
+        "cer": 8.333333333333332,
+        "distance": 1
+      },
+      {
+        "gt": "EasyOCR on M4 Mac GPU/CPU",
+        "hyp": "EasyOCR on M4 Mac GPUICPU",
+        "cer": 4.0,
+        "distance": 1
+      },
+      {
+        "gt": "Date: 2026-07-18 12:34:56",
+        "hyp": "Date: 2026-07-1812.34.56",
+        "cer": 12.0,
+        "distance": 3
+      }
+    ]
+  },
+  {
+    "exp_no": "01",
+    "exp_name": "グレースケール ＋ 大津の二値化",
+    "pred_text": "AlOCR Learning Journey\n日本語の認議テストです。\nEasyOCR on M4 Mac GPUICPU\nDate: 2026-07-18\n2.34.56\n1",
+    "cer": 11.363636363636363,
+    "wer": 46.15384615384615,
+    "distance": 10,
+    "line_details": [
+      {
+        "gt": "AI OCR Learning Journey",
+        "hyp": "AlOCR Learning Journey",
+        "cer": 8.695652173913043,
+        "distance": 2
+      },
+      {
+        "gt": "日本語の認識テストです。",
+        "hyp": "日本語の認議テストです。",
+        "cer": 8.333333333333332,
+        "distance": 1
+      },
+      {
+        "gt": "EasyOCR on M4 Mac GPU/CPU",
+        "hyp": "EasyOCR on M4 Mac GPUICPU",
+        "cer": 4.0,
+        "distance": 1
+      },
+      {
+        "gt": "Date: 2026-07-18 12:34:56",
+        "hyp": "Date: 2026-07-18",
+        "cer": 36.0,
+        "distance": 9
+      }
+    ]
+  },
+  {
+    "exp_no": "02",
+    "exp_name": "ガウシアンノイズ除去 ＋ 二値化",
+    "pred_text": "AI OCR Learning Journey\n日本語の記議テストです。\nEasyOCR on M4 Mac GPUICPU\nDate: 2026-07-18\n12.34.56",
+    "cer": 6.8181818181818175,
+    "wer": 23.076923076923077,
+    "distance": 6,
+    "line_details": [
+      {
+        "gt": "AI OCR Learning Journey",
+        "hyp": "AI OCR Learning Journey",
+        "cer": 0.0,
+        "distance": 0
+      },
+      {
+        "gt": "日本語の認識テストです。",
+        "hyp": "日本語の記議テストです。",
+        "cer": 16.666666666666664,
+        "distance": 2
+      },
+      {
+        "gt": "EasyOCR on M4 Mac GPU/CPU",
+        "hyp": "EasyOCR on M4 Mac GPUICPU",
+        "cer": 4.0,
+        "distance": 1
+      },
+      {
+        "gt": "Date: 2026-07-18 12:34:56",
+        "hyp": "Date: 2026-07-18",
+        "cer": 36.0,
+        "distance": 9
+      }
+    ]
+  },
+  {
+    "exp_no": "03",
+    "exp_name": "CLAHE ＋ シャープニング",
+    "pred_text": "AlOCR Learning Journey\n日本語の認識テストです\nEasyOCR on M4 Mac GPUICPU\nDate:2026-07-18 12.34.56",
+    "cer": 7.954545454545454,
+    "wer": 53.84615384615385,
+    "distance": 7,
+    "line_details": [
+      {
+        "gt": "AI OCR Learning Journey",
+        "hyp": "AlOCR Learning Journey",
+        "cer": 8.695652173913043,
+        "distance": 2
+      },
+      {
+        "gt": "日本語の認識テストです。",
+        "hyp": "日本語の認識テストです",
+        "cer": 8.333333333333332,
+        "distance": 1
+      },
+      {
+        "gt": "EasyOCR on M4 Mac GPU/CPU",
+        "hyp": "EasyOCR on M4 Mac GPUICPU",
+        "cer": 4.0,
+        "distance": 1
+      },
+      {
+        "gt": "Date: 2026-07-18 12:34:56",
+        "hyp": "Date:2026-07-18 12.34.56",
+        "cer": 12.0,
+        "distance": 3
+      }
+    ]
+  },
+  {
+    "exp_no": "04-A",
+    "exp_name": "傾斜画像 (回転8度) 補正なし",
+    "pred_text": "Learning Journey\nOCR\nAl\n日本語の認識テストです。\nGPUICPU\non MA Mac\nEasyOCR\n12.34.56\n2026-07-18\nDate:",
+    "cer": 54.54545454545454,
+    "wer": 69.23076923076923,
+    "distance": 48,
+    "line_details": [
+      {
+        "gt": "AI OCR Learning Journey",
+        "hyp": "Learning Journey",
+        "cer": 30.434782608695656,
+        "distance": 7
+      },
+      {
+        "gt": "日本語の認識テストです。",
+        "hyp": "OCR",
+        "cer": 100.0,
+        "distance": 12
+      },
+      {
+        "gt": "EasyOCR on M4 Mac GPU/CPU",
+        "hyp": "Al",
+        "cer": 100.0,
+        "distance": 25
+      },
+      {
+        "gt": "Date: 2026-07-18 12:34:56",
+        "hyp": "日本語の認識テストです。",
+        "cer": 100.0,
+        "distance": 25
+      }
+    ]
+  },
+  {
+    "exp_no": "04-B",
+    "exp_name": "Deskew 傾き補正(-8.0°補正) ＋ 二値化",
+    "pred_text": "AI OCR Learning Journey\n日本語の認議テストです。\nEasyOCR on M4 Mac GPUICPU\nDate: 2026-07-1812.34.56",
+    "cer": 5.681818181818182,
+    "wer": 30.76923076923077,
+    "distance": 5,
+    "line_details": [
+      {
+        "gt": "AI OCR Learning Journey",
+        "hyp": "AI OCR Learning Journey",
+        "cer": 0.0,
+        "distance": 0
+      },
+      {
+        "gt": "日本語の認識テストです。",
+        "hyp": "日本語の認議テストです。",
+        "cer": 8.333333333333332,
+        "distance": 1
+      },
+      {
+        "gt": "EasyOCR on M4 Mac GPU/CPU",
+        "hyp": "EasyOCR on M4 Mac GPUICPU",
+        "cer": 4.0,
+        "distance": 1
+      },
+      {
+        "gt": "Date: 2026-07-18 12:34:56",
+        "hyp": "Date: 2026-07-1812.34.56",
+        "cer": 12.0,
+        "distance": 3
+      }
+    ]
+  }
+]
