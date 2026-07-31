@@ -17,15 +17,14 @@ AI OCR（コンピュータビジョン × 自然言語処理）の仕組みを�
 - [x] **Phase 3: データサイエンティストとしての精度評価と画像前処理 [#3](https://github.com/ymkge/ai-ocr-learning-journey/issues/n)**
   - [x] 評価指標（CER: 文字エラー率、WER: 単語エラー率、編集距離）の自作実装 (`03_data_science/evaluate_cer.py`)
   - [x] OpenCVを用いた画像前処理（二値化、ノイズ除去、傾き補正）の実験とA/Bテスト (`03_data_science/run_phase3_experiments.py`)
-- [ ] **Phase 4: 実務を見据えたエンドツーエンド（E2E）開発と後処理 [#4](https://github.com/ymkge/ai-ocr-learning-journey/issues/n)**
-  - [ ] 正規表現やLLMを用いた構造化データ（JSON化）への変換
-  - [ ] 誤認識テキストの社内マスタ（台帳）名寄せ・自動補正ロジックの実装
+- [x] **Phase 4: 実務を見据えたエンドツーエンド（E2E）開発と後処理 [#4](https://github.com/ymkge/ai-ocr-learning-journey/issues/n)**
+  - [x] LLM (Gemini API / Fallback) によるテキスト構造化（JSON化）モジュールの実装 (`04_post_processing/llm_structuring.py`)
+  - [x] 編集距離・CERに基づく社内マスタ（台帳）自動名寄せ・補正ロジックの実装 (`04_post_processing/master_matching.py`)
+  - [x] E2Eパイプライン統合デモ (`04_post_processing/run_phase4_demo.py`)
 
 ---
 
 ## 📂 ディレクトリ構成
-
-今後、以下のような構成でソースコードや実験ノートブックを管理していく予定です。
 
 ```text
 ├── README.md               # 本ドキュメント
@@ -39,9 +38,14 @@ AI OCR（コンピュータビジョン × 自然言語処理）の仕組みを�
 │   ├── evaluate_cer.py     # 自作DPレーベンシュタイン距離 & CER/WER評価モジュール
 │   ├── image_preprocessing.py # OpenCV二値化・ノイズ除去・CLAHE・Deskewモジュール
 │   ├── run_phase3_experiments.py # 前処理A/Bテスト実験ランナー
-│   ├── phase3_execution_report.md # GitHub Issue記録用詳細レポート
+│   ├── phase3_execution_report.md # Phase 3 詳細レポート
 │   └── outputs/
-└── 04_post_processing/     # Phase 4: 後処理（NLP）・マスタ名寄せロジック
+└── 04_post_processing/     # Phase 4: 後処理（NLP）・マスタ名寄せ & LLM構造化
+    ├── master_matching.py  # 編集距離による社内マスタ自動名寄せモジュール
+    ├── llm_structuring.py  # Gemini API / ルールベース構造化 (JSON) モジュール
+    ├── run_phase4_demo.py  # E2E パイプライン統合デモ
+    ├── phase4_execution_report.md # Phase 4 詳細レポート
+    └── outputs/
 ```
 
 ## 🛠 開発環境・主な使用ライブラリ

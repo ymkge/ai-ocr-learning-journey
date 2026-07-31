@@ -5,6 +5,6 @@ easyocr
 pandas
 numpy
 Levenshtein
-google-generativeai
+google-genai
 matplotlib
 pillow
